@@ -1,0 +1,18 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: DancingScript-Regular
+font link: https://fonts.google.com/specimen/Dancing+Script
+font author: Impallari Type
+font author site: www.impallari.com
+Slogan Font: Renner-Thin.otf
+
+icon designer: parkjisun
+icon designer link: /naripuru
+        
+
+fontColor: {"hex":"#b40036"}
+bgColor: {"hex":"#3e0123"}
+iconColor: {"hex":"#b40036"}
+sloganColor: {"hex":"#ede3de"}
+      

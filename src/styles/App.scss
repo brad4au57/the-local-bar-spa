@@ -1,0 +1,144 @@
+@import "custom";
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap");
+
+$heroImg: "../assets/hero-bar.png";
+$barTaps: "../assets/on-tap.jpg";
+$wineSign: "../assets/wine-sign.jpeg";
+$billards: "../assets/billards-table.jpeg";
+
+body {
+  background: $light;
+}
+
+/*** Navigation Component ***/
+.nav-logo {
+  height: 30px;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/*** Hero Component ***/
+.jumbotron {
+  height: 100vh;
+  background-position: center;
+  background-repeat: none;
+  background-color: $light;
+  background-size: cover;
+  background-image: url($heroImg);
+  .cheers {
+    font-family: "Dancing Script", cursive;
+    font-size: 5rem;
+    color: $light;
+    background-color: $primary;
+    padding: 60px 25px;
+    border-radius: 50%;
+  }
+}
+
+/*** BarInfo Component ***/
+.info-section {
+  color: $dark;
+  .info-logo {
+    height: 250px;
+  }
+
+  .info-header-text {
+    font-weight: 200;
+    font-size: 1.5rem;
+  }
+  .info-body-text {
+    font-weight: 300;
+    font-size: 1.3rem;
+  }
+}
+.btn-outline-primary {
+  @include button-outline-variant(
+    $primary,
+    $color-hover: $light,
+    $active-background: $primary,
+    $active-border: $primary
+  );
+}
+
+/*** Bar Carousel Component ***/
+.carousel-item {
+  height: 75vh;
+}
+
+.carousel-caption {
+  bottom: 12%;
+  h3 {
+    font-size: 5rem;
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    text-shadow: 2px 2px 10px #000000;
+  }
+}
+#bar-taps-img {
+  height: 100%;
+  background-color: $primary;
+  background-image: url($barTaps);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+#wine-sign {
+  height: 100%;
+  background-color: $primary;
+  background-image: url($wineSign);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#billards {
+  height: 100%;
+  background-color: $primary;
+  background-image: url($billards);
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*** Menus Component ***/
+.menu-header-text {
+  font-size: 1.5rem;
+  font-family: "Dancing Script", cursive;
+  color: $light;
+  background-color: $primary;
+  margin-top: 2rem;
+  padding: 15px;
+  clip-path: polygon(10% 0, 90% 0, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+}
+
+.menu-card {
+  color: $light;
+
+  .menu-card-title {
+    font-size: 5rem;
+    border-bottom: 1px solid $light;
+  }
+  .menu-click-text {
+    font-weight: 300;
+  }
+}
+.full-menu-container {
+  background-color: #ffffff;
+  color: $dark;
+
+  .menu-section-header {
+    border-bottom: 1px solid $dark;
+  }
+
+  .menu-item-description {
+    font-size: 0.9rem;
+  }
+}
+
+@import "responsive";

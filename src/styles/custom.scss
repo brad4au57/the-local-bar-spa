@@ -1,0 +1,35 @@
+// Color Palette
+$primary: #3e0123; //Wine
+$secondary: #b40036;
+$tertiary: #34333a;
+$light: #ede3de;
+$dark: #19191a;
+
+$navbar-default-brand-color: $light;
+// $navbar-brand-padding-y: 15px;
+
+// Navbar toggle
+$navbar-light-color: $light;
+$navbar-light-hover-color: $secondary;
+$navbar-light-toggler-border-color: rgba(0, 0, 0, 0);
+
+// Button overide
+$btn-border-radius: 0;
+
+@media (min-width: 768px) {
+  $navbar-brand-padding-y: 50px;
+
+  .jumbotron {
+    margin-top: 100px;
+  }
+}
+
+// Modal override
+$modal-inner-padding: 1rem;
+
+// Bar Image Carousel
+$carousel-control-icon-width: 50px;
+$carousel-caption-color: $light;
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";

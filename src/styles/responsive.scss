@@ -1,0 +1,49 @@
+// Extra small devices (portrait phones, less than 576px)
+// Included in App.scss file
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .info-section {
+    .info-header-text {
+      font-size: 2rem;
+    }
+  }
+  .carousel-caption {
+    bottom: 15%;
+    h3 {
+      font-size: 6rem;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .nav-logo {
+    height: 75px;
+  }
+  .info-section {
+    .info-header-text {
+      font-size: 3rem;
+    }
+  }
+  .carousel-caption {
+    bottom: 20%;
+    h3 {
+      font-size: 6rem;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .carousel-caption {
+    bottom: 30%;
+    h3 {
+      font-size: 6rem;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+}
